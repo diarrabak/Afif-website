@@ -1,0 +1,692 @@
+@import "variables";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* background-image: url("/storage/images/cannabis_2.0_wireframe_revised_1_mod.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    overflow-x: hidden;
+    position: relative;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+img {
+    max-width: 100%;
+}
+.logo-img {
+    width: 30%;
+    border-radius: 20px;
+    min-width: 70px;
+}
+
+.home-img {
+    width: 100%;
+    height: 700px;
+
+    @media screen and (max-width: 992px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 300px;
+    }
+}
+
+.login {
+    position: absolute;
+    top: 30%;
+    right: 2em;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.card {
+    margin-bottom: 0em;
+    padding: 1em;
+    border: 0;
+
+    .card-body {
+        background-color: #4aa347;
+        // padding: 0;
+    }
+
+    .card-title,
+    .card-text,
+    .card-description {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+    .card-title {
+        font-size: 1.5em;
+    }
+    .card-img-top {
+        height: 350px;
+        @media screen and (max-width: 1300px) {
+            height: 280px;
+        }
+
+        &:hover {
+            border: 2px solid #f09433;
+            border-bottom: 0;
+        }
+    }
+
+    .card-description {
+        text-align: left;
+        display: none;
+    }
+    &:hover .card-description {
+        display: block;
+    }
+}
+
+.bio,
+.publications {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+.home-title {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: #f09433;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 5em;
+}
+#carouselExampleCaptions {
+    .carousel-item {
+        h5 {
+            position: relative;
+            top: -8.5em;
+            color: blue;
+
+            @media screen and (max-width: 992px) {
+                top: -6em;
+            }
+
+            @media screen and (max-width: 576px) {
+                top: -3.5em;
+            }
+
+            @media screen and (max-width: 400px) {
+                top: -1.5em;
+            }
+        }
+    }
+}
+
+.carousel-item h5 {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel {
+    button {
+        display: none;
+    }
+    &:hover {
+        button {
+            display: block;
+        }
+    }
+}
+.afif-definition {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #26434b;
+    font-weight: bold;
+}
+
+.about-wrapper h2 {
+    margin-top: 0;
+    font-weight: bold;
+}
+.arrow-wrapper {
+    text-align: center;
+}
+h2 {
+    color: #0e5b42;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    text-align: center;
+    font-size: 2em;
+    /* margin-top: 0;
+    margin-bottom: 0.5em; */
+    a {
+        color: #26434b;
+        text-transform: uppercase;
+        font-size: 0.75em;
+    }
+}
+.navbar-nav {
+    margin-left: 2%;
+    padding-left: 0;
+}
+
+.navbar {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    /* border:3px solid red; */
+    li {
+        margin-left: 3em;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: #f4ebc5;
+
+        a {
+            color: #f4ebc5;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+        @media screen and (max-width: 1300px) {
+            margin-left: 1.2em;
+        }
+        @media screen and (max-width: 1200px) {
+            margin-left: 1em;
+            font-size: 1.2em;
+        }
+
+        @media screen and (max-width: 1100px) {
+            margin-left: 0.75em;
+            font-size: 1em;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-left: 0;
+            font-size: 1.2em;
+        }
+    }
+}
+
+/* .collapse {
+    margin-left: 12%;
+    max-width: 100%;
+} */
+
+.dropdown-menu,
+.navbar-nav > li:hover,
+header {
+    background-color: #4aa347;
+}
+
+.navbar-nav > li:active {
+    color: #82bf88;
+}
+
+/* .navbar-nav >li:hover{
+   border:0.5px gray solid;
+   border-bottom: 0;
+
+} */
+
+.dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid gray;
+    li {
+        margin-left: 0.25em;
+        font-size: 1.1em;
+        a {
+            color: #f4ebc5;
+
+            /* border:2px solid red; */
+            &:before {
+                content: "\00BB \0020";
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+.dropdown:hover > ul {
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+main {
+    position: relative;
+    padding-bottom: 1em;
+    margin: 0;
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    /* height: 373.5px; */
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: 10%;
+    @media screen and (max-width: 576px) {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+nav {
+    width: 80%;
+    & > a {
+        margin-left: 2em;
+    }
+}
+
+.navbar-toggler {
+    margin-right: 3em;
+    z-index: 100;
+}
+
+footer {
+    background-color: #db9851; /* #f1f6f0;*/
+    color: #1d434e;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* margin-top: 2em; */
+    .row {
+        margin-left: 2em;
+        margin-right: 2em;
+        padding-top: 2em;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+        a {
+            color: white; /*#1d434e;*/
+            text-decoration: none;
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+}
+.accordion-header {
+    padding: 0;
+}
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    background-color: #4aa347;
+}
+.accordion-body {
+    text-align: justify;
+    @media screen and (max-width: 576px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.no-data {
+    color: red;
+    text-align: center;
+}
+
+.facebook {
+    background-color: #0082ca;
+}
+.twitter {
+    background-color: #55acee;
+}
+.youtube {
+    background-color: #fa0202;
+}
+
+.instagram {
+    background: #f09433;
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social-nets {
+    padding-top: 1.5em;
+    li {
+        display: inline-block;
+    }
+}
+
+.testimonial {
+    text-align: center;
+    img {
+        max-width: 100%;
+        width: 30%;
+
+        @media screen and (max-width: 992px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 80%;
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+.event-img {
+    width: 100%;
+    height: 600px;
+
+    @media screen and (max-width: 576px) {
+        height: 400px;
+    }
+}
+.event-title {
+    position: relative;
+    top: -8em;
+    @media screen and (max-width: 992px) {
+        top: -9em;
+    }
+    @media screen and (max-width: 768px) {
+        top: -10em;
+    }
+    @media screen and (max-width: 576px) {
+        top: -8em;
+    }
+}
+.event-info {
+    text-align: center;
+    margin-top: -3em;
+    h2 {
+        margin-bottom: 2em;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
+.service-item {
+    .card-description {
+        display: block;
+    }
+
+    img {
+        width: 25%;
+        min-width: 100px;
+        float: left;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0.5em;
+            width: 30%;
+            height: 300px;
+            padding: 0;
+        }
+    }
+    .card-body {
+        width: 70%;
+    }
+
+    img,
+    .card-body {
+        display: inline-block;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+.event-item {
+    .card-date,
+    .card-body {
+        display: inline-block;
+    }
+
+    .card-date {
+        width: 10%;
+        min-width: 60px;
+        float: left;
+        background-color: red;
+        margin-right: 0.5em;
+        padding-top: 1em;
+        height: 90%;
+
+        @media screen and (max-width: 768px) {
+            height: 70%;
+        }
+        span {
+            display: block;
+            text-align: center;
+
+            &:first-of-type {
+                border-bottom: 2px solid green;
+                font-size: 1.5em;
+            }
+        }
+    }
+    .card-body {
+        width: 85%;
+
+        @media screen and (max-width: 768px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 390px) {
+            width: 70%;
+        }
+    }
+}
+
+.service-item,
+.event-item {
+    .card-body {
+        h3 {
+            text-align: left;
+            margin-bottom: 0.5em;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.home-banner {
+    background-color: blue;
+    padding: 2em;
+    & > div {
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+    }
+}
+.call-volunteer {
+    p,
+    h2 {
+        text-align: left;
+    }
+    & > div {
+        margin-top: 2.5em;
+    }
+}
+
+#event-item {
+    & > div {
+        display: inline-block;
+        height: 100%;
+    }
+    .event-date {
+        width: 16%;
+        float: left;
+        background-color: red;
+        margin-right: 0.5em;
+        padding-top: 0;
+        height: 100%;
+
+        span {
+            display: block;
+            text-align: center;
+
+            &:first-of-type {
+                border-bottom: 2px solid green;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .event-place {
+        float: right;
+        width: 80%;
+        background-color: #4aa347;
+        padding-left: 0.25em;
+        padding-top: 0.5em;
+
+        @media screen and (max-width: 390px) {
+            width: 70%;
+        }
+    }
+}
+
+.page {
+    margin-top: 4em;
+    h3 a {
+        text-decoration: none;
+    }
+}
+
+.testimonial-bg {
+    position: relative;
+    top: -4em;
+    &::before {
+        content: "";
+        background: url("/storage/images/header.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.15;
+    }
+}
+
+.service-img {
+    height: 230px !important;
+}
+
+.page {
+    .testimonial {
+        text-align: center;
+        img {
+            max-width: 100%;
+            width: 25%;
+            @media screen and (max-width: 1300px) {
+                width: 35%;
+            }
+            @media screen and (max-width: 992px) {
+                width: 40%;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.event-bg {
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+    margin-bottom: 0;
+    .card {
+        background: #f7f7f7;
+    }
+}
+
+.header-img {
+    max-width: 100%;
+    width: 100%;
+
+    height: 600px;
+
+    @media screen and (max-width: 992px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 300px;
+    }
+}
+
+.main-title {
+    position: relative;
+    top: -9em;
+    color: blue;
+
+    @media screen and (max-width: 992px) {
+        top: -8.5em;
+    }
+
+    @media screen and (max-width: 576px) {
+        top: -7.5em;
+    }
+
+    @media screen and (max-width: 400px) {
+        top: -6em;
+    }
+}

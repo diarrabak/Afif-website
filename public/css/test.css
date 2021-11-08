@@ -1,0 +1,306 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* background-image: url("/storage/images/cannabis_2.0_wireframe_revised_1_mod.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo-img {
+  width: 30%;
+  border-radius: 20px;
+  min-width: 70px;
+}
+
+.home-img {
+  width: 100%;
+  height: 700px;
+}
+
+.login {
+  position: absolute;
+  top: 30%;
+  right: 2em;
+}
+.login li {
+  display: inline-block;
+}
+
+.card {
+  margin-bottom: 0em;
+  padding: 1em;
+  border: 0;
+}
+
+.home-title {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  color: #f09433;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 5em;
+}
+
+.carousel-item h5 {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+.afif-definition {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.card-img-top:hover,
+.bio img {
+  border: 2px solid white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: #26434b;
+  font-weight: bold;
+}
+
+.about-wrapper h2 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.arrow-wrapper {
+  text-align: center;
+}
+
+h2 {
+  color: #0e5b42;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  text-align: center;
+  font-size: 2em;
+  /* margin-top: 0;
+  margin-bottom: 0.5em; */
+}
+h2 a {
+  color: #26434b;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.navbar-nav {
+  margin-left: 2%;
+  padding-left: 0;
+}
+
+.navbar {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  /* border:3px solid red; */
+}
+.navbar li {
+  margin-left: 3em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #f4ebc5;
+}
+.navbar li a {
+  color: #f4ebc5;
+}
+.navbar li:last-of-type {
+  margin-right: 0;
+}
+@media screen and (max-width: 1300px) {
+  .navbar li {
+    margin-left: 1.2em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar li {
+    margin-left: 1em;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar li {
+    margin-left: 0.75em;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar li {
+    margin-left: 0;
+    font-size: 1.2em;
+  }
+}
+
+/* .collapse {
+    margin-left: 12%;
+    max-width: 100%;
+} */
+.dropdown-menu,
+.navbar-nav > li:hover,
+header {
+  background-color: #4aa347;
+}
+
+.navbar-nav > li:active {
+  color: #82bf88;
+}
+
+/* .navbar-nav >li:hover{
+   border:0.5px gray solid;
+   border-bottom: 0;
+
+} */
+.dropdown-menu .dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid gray;
+}
+.dropdown-menu .dropdown-menu li {
+  margin-left: 0.25em;
+  font-size: 1.1em;
+}
+.dropdown-menu .dropdown-menu li a {
+  color: #f4ebc5;
+  /* border:2px solid red; */
+}
+.dropdown-menu .dropdown-menu li a:before {
+  content: "» ";
+  font-size: 1.25em;
+}
+
+.dropdown:hover > ul {
+  display: block;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+main {
+  position: relative;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  /* height: 373.5px; */
+}
+
+.wrapper {
+  width: 80%;
+  margin-left: 10%;
+}
+
+nav {
+  width: 80%;
+}
+nav > a {
+  margin-left: 2em;
+}
+
+.navbar-toggler {
+  margin-right: 3em;
+  z-index: 100;
+}
+
+footer {
+  background-color: #db9851;
+  /* #f1f6f0;*/
+  color: #1d434e;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* margin-top: 2em; */
+}
+footer .row {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 2em;
+}
+footer li {
+  list-style: none;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+footer li a {
+  color: white;
+  /*#1d434e;*/
+  text-decoration: none;
+}
+footer li a:hover {
+  color: #007bff;
+}
+
+.no-data {
+  color: red;
+  text-align: center;
+}
+
+.facebook {
+  background-color: #0082ca;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.youtube {
+  background-color: #fa0202;
+}
+
+.instagram {
+  background: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
+}
+
+.social-nets {
+  padding-top: 1.5em;
+}
+.social-nets li {
+  display: inline-block;
+}
