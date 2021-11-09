@@ -73,7 +73,7 @@ Route::get('/services/{service}', [ServiceController::class, 'show'])->name('ser
 /***Protected routes for logged in users only */
 /*These CRUD should be put before the non-protected ones*/
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => ['auth', 'admin']], function () {
 
     // Route::resource('users', UserController::class);
 
