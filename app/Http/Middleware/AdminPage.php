@@ -16,11 +16,9 @@ class AdminPage
      */
     public function handle(Request $request, Closure $next)
     {
-        if(in_array('admin', $request->session()->get('roles')))        
         {
             return $next($request);
         }
-      return redirect()->route('home');
     }
     
 }
